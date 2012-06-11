@@ -2,7 +2,7 @@
 
 Proximo is an experiment to implement Backbone.js' Model class but enhanced with
 the Harmony Proxy proposal. This allows Model attributes to be accessed like a
-native JavaScript Object but still allow the Backbone events to be fired.
+native JavaScript Object but still enables change events to be fired.
 
 ```javascript
 var m = new Model();
@@ -22,6 +22,8 @@ m.foo = 'baz';
 Proximo uses the Harmony Proxy proposal implemented in the v8 engine. This is available by
 calling `node` with the `--harmony_proxies` flag. As an alternative the `node-proxy`
 module can be installed.
+
+Proximo is an experiment and is still being developed. Use at your own risk.
 
 ## Install
 
